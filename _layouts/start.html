@@ -70,7 +70,7 @@
       animation-duration: 4s;
       animation-direction: normal;
       animation-fill-mode: forwards;
-      background-image: url("images/amm-logo.png");
+      background-image: url("{{ 'images/amm-logo.png' | relative_url }}");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -92,7 +92,7 @@
       animation-duration: 5s;
       animation-direction: normal;
       animation-fill-mode: forwards;
-      background-image: url("images/amm-agenda.png");
+      background-image: url("{{ 'images/amm-agenda.png' | relative_url }}");
       background-position: right center;
       background-repeat: no-repeat;
       background-color: white;
@@ -116,7 +116,7 @@
   <div class="amm-logo-agenda"></div>
   <script type="text/javascript">
     setTimeout(function() {
-      location.href = "choose.html"; 
+      location.href = "choose.html";
     }, 6000);
   </script>
 </body>
