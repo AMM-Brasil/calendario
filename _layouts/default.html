@@ -8,7 +8,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/style.css' | absolute_url }}">
+  <style>
+  .bike-body .cover {
+    background-image: url('{{ "/images/AMM-LOGO.png" | absolute_url }}');
+  }
+  </style>
 </head>
 
 <body>
