@@ -16,7 +16,7 @@
 title: AMM Brasil / Agenda
 email: natanaelsimoes@gmail.com
 description: Agenda de Eventos de todo AMM Brasil. Fazendo o que é preciso do jeito que eu gosto!
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/calendario" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: natanaelsimoes
 github_username:  natanaelsimoes
