@@ -13,6 +13,6 @@
   region = getQueryVariable('r');
   if (typeof(Storage) !== "undefined") {
     localStorage.setItem("lastRegion", region);
-  }
-  location.href = "/calendario/" + region + ".html";
+  } 
+  location.href = "{{ site.baseurl }}/calendario/" + region + ".html";
 </script>
