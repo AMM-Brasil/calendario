@@ -1,0 +1,11 @@
+<script>
+  if (typeof(Storage) !== "undefined") {
+    lastRegion = localStorage.getItem("lastRegion");
+    location.href =
+      (lastRegion == null) ?
+      "/calendario/nacional.html" :
+      "/calendario/" + lastRegion + ".html";
+  } else {
+    //location.href = "/calendario/nacional.html";
+  }
+</script>

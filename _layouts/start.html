@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMM Brasil / Agenda</title>
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+    }
+
+    @-webkit-keyframes animLogo {
+      0% {
+        left: 50%;
+        opacity: 0;
+      }
+      50% {
+        left: 50%;
+        opacity: 1;
+      }
+      100% {
+        left: 25%;
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes animAgenda {
+      0% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes animLogo {
+      0% {
+        left: 50%;
+        opacity: 0;
+      }
+      50% {
+        left: 50%;
+        opacity: 1;
+      }
+      100% {
+        left: 25%;
+        opacity: 1;
+      }
+    }
+
+    @keyframes animAgenda {
+      0% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .amm-logo {
+      animation-name: animLogo;
+      animation-duration: 4s;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      background-image: url("images/amm-logo.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: white;
+      height: 100%;
+      width: 30%;
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    .amm-logo-agenda {
+      animation-name: animAgenda;
+      animation-duration: 5s;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      background-image: url("images/amm-agenda.png");
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: contain;
+      height: 100%;
+      width: 45%;
+      z-index: 2;
+      position: absolute;
+      left: 65%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="amm-logo"></div>
+  <div class="amm-logo-agenda"></div>
+  <script type="text/javascript">
+    setTimeout(function() {
+      location.href = "choose.html"; 
+    }, 6000);
+  </script>
+</body>
+
+</html>

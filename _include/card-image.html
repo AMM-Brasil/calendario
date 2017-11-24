@@ -1,0 +1,16 @@
+<div class="col s12">
+  <div class="card">
+    <div class="card-image">
+      <img src="{{ post.image }}">
+      <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+    </div>
+    <div class="card-content">
+      <span class="card-title">{{ post.title }}</span>
+      {% if post.excerpt == post.content %}
+        <p>Eu sou um cartão muito simples. Eu sou bom para conter pequenas informações. Eu sou conveniente por que eu preciso de muito pouca marcação para ser usado efetivamente.</p>
+      {% else %}
+        {{ post.excerpt }}
+      {% endif %}
+    </div>
+  </div>
+</div>

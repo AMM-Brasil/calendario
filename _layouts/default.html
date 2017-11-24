@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="bike">
+    <div class="bike-body">
+      <div class="seat"></div>
+      <div class="cover"></div>
+      <div class="lamp"></div>
+      <div class="motor">
+        <div class="part-1">
+          <div class="part-1-top"></div>
+          <div class="part-1-bottom"></div>
+        </div>
+        <div class="part-2">
+          <div class="part-2-base">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="tire"></div>
+    <div class="tire"></div>
+    <div class="smoke"></div>
+  </div>
+</div>
+  <header class="navbar-fixed">
+    <nav class="grey darken-4">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="{{ '/choose.html' | relative_url }}" class="brand-logo center" style="height: 100%">
+          <img src="{{ '/images/moto-logo.png' | relative_url }}" alt="AMM Rondônia" style="height: 100%">
+        </a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="{{ '/calendario' | relative_url }}"><i class="material-icons">event</i>Calendário</a></li>
+          <li><a href="{{ '/choose.html' | relative_url }}"><i class="material-icons">watch_later</i>Eventos Passados</a></li>
+          <li><a href="{{ '/quem-somos' | relative_url }}"><i class="material-icons">face</i>Quem somos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  {{ content }}
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="{{ '/js/init.js' | relative_url }}"></script>
+</body>
+
+</html>
