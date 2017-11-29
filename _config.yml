@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: AMM Brasil / Agenda
 email: natanaelsimoes@gmail.com
-description: Agenda de Eventos de todo AMM Brasil. Fazendo o que é preciso do jeito que eu gosto!
+description: Agenda de Eventos de todo AMM Brasil. Fazer o que é preciso do jeito que eu gosto!
 baseurl: "/calendario" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: natanaelsimoes

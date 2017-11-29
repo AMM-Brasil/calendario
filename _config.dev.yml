@@ -1,0 +1,15 @@
+title: AMM Brasil / Agenda
+email: natanaelsimoes@gmail.com
+description: Agenda de Eventos de todo AMM Brasil. Fazendo o que é preciso do jeito que eu gosto!
+baseurl: ""
+url: ""
+twitter_username: natanaelsimoes
+github_username:  natanaelsimoes
+paginate: 10
+paginate_path: /blog/page:num/
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-auto-image

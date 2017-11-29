@@ -437,7 +437,6 @@ body {
 .choose-option {
   display: table;
   width: 100%;
-  height: 140px;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
@@ -450,18 +449,45 @@ body {
 .choose-image {
   display: inline-block;
   width: 100%;
-  height: 140px;
   overflow: hidden;
 }
 
 @media (max-width: 512px) {
+  .choose-row {
+    margin-top: 30%;
+  }
+  .choose-option {
+    height: 140px;
+  }
+  .choose-image {
+    height: 140px;
+  }
+}
+@media (max-width: 320px) {
+  .choose-row {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 513px) {
+  .choose-row {
+    margin-top: 1%;
+  }
+  .choose-option {
+    height: 300px;
+  }
+  .choose-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
   .choose-image img {
     max-height: 100%;
   }
 }
-@media (min-width: 513px) {
+@media (min-width: 769px) {
   .choose-image img {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
